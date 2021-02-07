@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/app.css">
+  <!-- <style>
+    .border-red {
+      border: 1px solid red;
+    }
+  </style> -->
+</head>
+
+<body>
+
+<div id="test" class="test_list">
+  <ul>
+    <li class="test_list01">テスト1</li>
+    <li class="test_list01">テスト2</li>
+    <li class="test_list01">テスト3</li>
+  </ul>
+</div>
+
+<script>
+  const test = document.getElementById('test');
+  const test_list = document.querySelector('.test_list');
+  const test_list01 = document.querySelector('.test_list01');
+  const test_lists01 = document.querySelectorAll('.test_list01');
+  console.log(test);
+  console.log(test_list);
+  console.log(test_list01); // 一番上のみ
+  console.log(test_lists01);
+
+</script>
+</body>
+
+</html>
