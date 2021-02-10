@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/app.css">
+  <style>
+    .red {
+      color: red;
+    }
+
+    .blue {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="test">
+    <ul>
+      <li class="test_list blue">テスト1</li> <!-- ここだけ青 -->
+      <li class="test_list">テスト2</li>
+      <li class="test_list">テスト3</li>
+    </ul>
+  </div>
+
+  <script>
+    // const test = document.getElementById('test');
+    document.getElementById('test').classList.add('red');
+    // test.classList.add('red'); // class redが付く
+    // 返り値 Element.classList.toggle
+
+    // const testList = document.querySelector('.test_list');
+    // testList.classList.remove('blue'); // class blueが抜ける
+    // 返り値 Element
+
+
+    // const test_list01 = document.querySelector('.test_list');
+    // const test_lists01 = document.querySelectorAll('.test_list');
+    // console.log(test);
+    // console.log(testList);
+    // console.log(test_list01); // 一番上のみ
+    // console.log(test_lists01);
+
+  </script>
+</body>
+
+</html>
