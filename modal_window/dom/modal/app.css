@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .modal {
   position: fixed;
   left: 0;
@@ -6,13 +7,17 @@
   height: 100%;
   z-index: 9999;
   opacity: 0;
+  /* 透明 */
   visibility: hidden;
+  /* 非表示 */
   transition: .6s;
 }
 
 .modal.is-show {
   opacity: 1;
+  /* 不透明 */
   visibility: visible;
+  /* 表示 */
 }
 
 .modal__inner {
