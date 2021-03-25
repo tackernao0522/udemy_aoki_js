@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location</title>
+</head>
+
+<body>
+  <button type="button" id="history">戻る</button>
+  <script>
+
+    // window.addEventListener('load', () => {
+    //   location.href = 'https://google.com'; // ジャンプする
+    // });
+
+    console.log(location.href); // 現在のURLを見ることができる
+
+    console.log(location.search); // http://127.0.0.1:5500/section4/location.html?test=111 (クエリストリングが取得できる)
+
+    document.getElementById('history')
+    .addEventListener('click', () => {
+      history.back(); // 戻る
+    });
+  </script>
+
+</body>
+
+</html>
